@@ -43,6 +43,26 @@ Erro x Correções:
 
 --------------------------------------------------------
 
-2. 
+2. Suponha que os elementos de um vetor v são do tipo inte cada intocupa 8 bytes no seu computador. Se o endereço de v[0] é 55000, qual o valor da expressão v + 4?
+
+Resposta: 55032
+
+3. código:
+
+#include <stdio.h>
+
+int main() {
+    int a = 5, b = 12, c;
+    int *p;
+    int *q;
+    p = &a;
+    q = &b;
+    c = *p + *q;
+    printf("c = %d", c);
+}
+
+Seja o trecho de código acima que valor de c será impresso no comando printf?
+
+c = 17
 
 
