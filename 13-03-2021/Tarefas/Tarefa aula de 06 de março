@@ -1,0 +1,48 @@
+Para rever se entendeu
+
+1. Assinale a alternativa correta com relação ao estudo de Ponteiros?
+
+[ ] Ponteiro é o valor de uma variável
+[ ] Ponteiro é o indicador da próxima veriável a ser passada
+[x] Ponteiro é uma variável que armazena endereço
+[ ] Ponteiro é o endereço que aponta para uma variável
+
+--------------------------------------------------------
+
+2 - Quais das seguintes instruções declaram um ponteiro para uma variável float?
+
+[x] float *p;
+[ ] float p;
+[ ] *float p;
+[ ] float p*;
+
+--------------------------------------------------------
+
+Continuando
+
+1. Verifique se há erros no código a seguir, em case afirmativos, como seria a correção.
+
+int main() {
+    int x, *p;
+    x = 100;
+    p = x;
+    printf("Valor de p: %d.\n", *p)
+    return 0;
+}
+
+Erro x Correções:
+    - 1º Erro: Para executar o metodo 'printf', é necessário fazer a inclusão da lib 'stdio.h'
+    - Correção: Declarar o include.
+	#include <stdio.h>
+
+    - 2º Erro: p = x; a variável 'p' é um ponteiro de inteiro, logo ele deve receber a refência (&) da variável x
+         Um ponteiro armazena endereços de variáveis, e não valores absolutos das varíavels.
+
+    - Correção: Atribuir para p o endereço da variável x, utilizando o operador de referência &.
+	p = &x;
+
+--------------------------------------------------------
+
+2. 
+
+
