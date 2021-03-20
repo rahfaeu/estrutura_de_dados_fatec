@@ -1,0 +1,15 @@
+Na aula de hoje, vimos elementos de programação básica na linguagem Java. Sabemos também que uma boa forma de aprender é praticar. A seguir, temos 5 problemas de programação. Crie um programinha em Java para resolver cada um deles.
+
+1. Ler uma temperatura em Graus Celsius, converter para Fahrenheit e exibir o resultado.
+
+2. Ler o valor de um raio r, calcular o comprimento da circunferência, a área do círculo e o volume da esfera correspondentes. Pesquise a classe Math do Java para o uso do PI.
+
+3. Ler as coordenadas (x, y) de dois pontos P1 e P2, calcular a distância entre eles e exibir o resultado. A distância é dada por  . Pesquise na classe Math do Java para o uso da raiz quadrada. 
+
+4. Ler um número inteiro e dizer se ele é par ou ímpar.
+
+5. Ler um número inteiro e exibir a sua tabuada completa do 0 ao 10.
+
+Você pode escrever suas soluções à mão e tirar uma foto ou escrever num arquivo e postar. A postagem é individual, mesmo que vc tenha resolvido com outros colegas.
+
+Mãos à obra!
