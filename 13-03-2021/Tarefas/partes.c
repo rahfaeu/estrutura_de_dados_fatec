@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 /*
     1.Implemente uma função que recebe um número real passado valor,
@@ -15,7 +16,12 @@ int main() {
 
 float num;
 int *pi;
+
+pi = (int *) malloc(sizeof(int));
+
 float *pf;
+pf = (float *) malloc(sizeof(float));
+
 int parte_inteira;
 float parte_fracionada;
 
