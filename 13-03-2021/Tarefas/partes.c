@@ -26,6 +26,7 @@ printf("Digite um numero real: ");
 scanf("%f", &num);
 
 partes(num, pi, pf);
+
 printf("Numero real: %.4f\n", num);
 printf("Parte inteira: %d\n", parte_inteira);
 printf("Parte fracionada: %.4f\n", parte_fracionada);
