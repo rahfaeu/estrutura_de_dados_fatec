@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <math.h>
+#include <stdlib.h>
 
 /*
     2.Implemente uma função que calcula a área da superfície e o volume
@@ -19,8 +20,12 @@ int main() {
     float raio = 0;
     float a = 0;
     float v = 0;
+    
     float *pa;
+    pa = (float *) malloc(sizeof(float *));
+    
     float *pv;
+    pv = (float *) malloc(sizeof(float *));
 
     pa = &a;
     pv = &v;
@@ -30,8 +35,8 @@ int main() {
 
     calc_esfera(raio, pa, pv);
 
-    printf("Area da esfera: %.1f\n", a);
-    printf("Volume da esfera: %.1f", v);
+    printf("Area da esfera: %.2f\n", a);
+    printf("Volume da esfera: %.2f", v);
 
     return 0;
 }

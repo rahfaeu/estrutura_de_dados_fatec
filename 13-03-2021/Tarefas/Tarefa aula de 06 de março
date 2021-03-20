@@ -140,6 +140,7 @@ A área da superfície e o volume são dados, respectivamente, por:
 
 #include <stdio.h>
 #include <math.h>
+#include <stdlib.h>
 
 /* Protótipo da função */
 void calc_esfera(float r, float *area, float *volume);
@@ -148,8 +149,12 @@ int main() {
     float raio = 0;
     float a = 0;
     float v = 0;
+    
     float *pa;
+    pa = (float *) malloc(sizeof(float *));
+    
     float *pv;
+    pv = (float *) malloc(sizeof(float *));
 
     pa = &a;
     pv = &v;
@@ -159,8 +164,8 @@ int main() {
 
     calc_esfera(raio, pa, pv);
 
-    printf("Area da esfera: %.1f\n", a);
-    printf("Volume da esfera: %.1f", v);
+    printf("Area da esfera: %.2f\n", a);
+    printf("Volume da esfera: %.2f", v);
 
     return 0;
 }
