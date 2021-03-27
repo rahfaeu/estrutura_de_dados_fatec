@@ -1,0 +1,15 @@
+Na aula de hoje, vimos elementos de programação básica na linguagem Java, vetores e modularização. Sabemos também que uma boa forma de aprender é praticar. A seguir, temos alguns problemas. Crie um programinha em Java com métodos para resolver cada um deles, e o método principal, com as entradas necessárias e as chamadas para os métodos.
+
+1. Ler um conjunto de notas, cuja quantidade é determinada pelo usuário. Calcule a média de todas elas.
+
+2. Crie um vetor capaz de armazenar 50 números inteiros. Em seguida faça o seu preenchimento automático com os números de 101 a 150, ou seja, na posição número 0 ponha 101, na posição 1 ponha o número 102, e assim sucessivamente. Em seguida exiba os valores deste vetor.
+
+3. Receber dois números e retornar qual deles é o maior.
+
+4. Receber 3 notas de um aluno como parâmetros e uma letra. Se a letra for A, o método deve calcular a média aritmética das notas do aluno; se for P, deverá calcular a média ponderada, com pesos 5, 3 e 2.
+
+5. Receber um número inteiro maior do que zero e retornar a soma de todos os seus algarismos. Por exemplo, ao numero 251 corresponde ao valor 8 (2 + 5 + 1). 
+
+Você pode escrever suas soluções à mão e tirar uma foto ou escrever num arquivo e postar. A postagem é individual, mesmo que vc tenha resolvido com outros colegas.
+
+Mãos à obra!
