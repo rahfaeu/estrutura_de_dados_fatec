@@ -1,3 +1,4 @@
+
 import java.util.Scanner;
 
 public class PrograminhaJava {
@@ -21,9 +22,43 @@ public class PrograminhaJava {
                 oMaiorDeDois();
                 break;
             }
+            else if (opcao == 4){
+                float v[];
+                v = new float[3];
+                char letra;
+
+                System.out.println("Informe as notas e o tipo de calculo:");
+                System.out.println("[A] Média Aritimética");
+                System.out.println("[P] Média Ponderada");
+                for (int i = 0; i < v.length; i++) {
+                    System.out.printf("Digite a %dª nota: ", i+1);
+                    v[i] = entrada.nextFloat();
+                }
+                System.out.printf("Digite P ou A nota: ");
+                letra = entrada.next().toLowerCase().charAt(0);
+
+                while (letra != 'a' & letra != 'p') {
+                    System.out.println("Letra inválida, tente novamente!");
+                    System.out.printf("Digite P ou A nota: ");
+                    letra = entrada.next().toLowerCase().charAt(0);
+                }
+                
+                mediaAP(v, letra);
+                break;
+            }
+            if(opcao == 5) {
+                System.out.printf("Digite um número inteiro maior que 0: ");
+                int n = entrada.nextInt();
+                while (n < 1) {
+                    System.out.printf("Digite um número inteiro maior que 0: ");
+                    n = entrada.nextInt();
+                }                
+                somaAlgorismos(n);
+                break;          
+            }
         } while (opcao != 0);
         
-        System.out.println("Bye :)");
+        System.out.println("\nBye :)");
         entrada.close();
     }
 
@@ -98,8 +133,36 @@ public class PrograminhaJava {
         System.out.printf("O maior número é: %d\n", maior);
     }
 
-    static void mediaAritOuPond() {
-        System.out.println("[4] Calcular Média A (aritimética) ou P (Ponderada)");
-        
+    static void mediaAP(float v[], char letra) {
+        float[] pesos = {5, 3, 2};
+        float media = 0;
+        float somaNotas = 0;
+        float somaPesos = 0;
+        if (letra == 'a') {
+            for (int i = 0; i < v.length; i++) {
+                somaNotas += v[i];
+            }
+            media = somaNotas / v.length;
+            System.out.printf("\nA Média Aritimética é: %.1f\n", media);
+        }
+        else {
+            for (int i = 0; i < v.length; i++) {
+                somaNotas += pesos[i] * v[i];
+                somaPesos += pesos[i];
+            }
+            media = somaNotas / somaPesos;
+            System.out.printf("\nA Média Ponderada é: %.1f\n", media);
+        }        
+    }
+
+    static void somaAlgorismos(int num) {
+        int soma = 0;
+        int digito = 0;
+        while (num > 0) {
+            digito = num % 10;
+            num /= 10;
+            soma += digito;
+        }
+        System.out.printf("A soma dos algorismos é: %d", soma);
     }
 }
