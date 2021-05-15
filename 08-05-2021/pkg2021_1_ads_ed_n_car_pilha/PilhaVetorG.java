@@ -1,14 +1,14 @@
-public class PilhaVetor {
-    private int dados[];
-    private int topo;
+public class PilhaVetorG<T> {// <> Operador diamante
+    private T[] dados; 
     private int capacidade;
+    private int topo;
 
     // Construtores
-    public PilhaVetor() {
+    public PilhaVetorG() {
         this(10);
     }
-    public PilhaVetor(int capacidade) {
-        this.dados = new int[capacidade];
+    public PilhaVetorG(int capacidade) {
+        this.dados = (T[]) new Object [capacidade];
         this.topo = 0;
         this.capacidade = capacidade;
     }
@@ -18,17 +18,16 @@ public class PilhaVetor {
     public boolean estaVazia() {
         return this.topo == 0;
     }
-    public void push(int i) {
-        //Atribui primeito inclementa depois (++)
+    public void push(T i) {
         this.dados[this.topo++] = i;
     }
-    public int pull() {
+    public T pull() {
         return this.dados[--this.topo];
     }
     public int tamanho() {
         return this.topo;
     }
-    public int consultaTopo() {
+    public T consultaTopo() {
         return this.dados[this.topo-1];
     }
     @Override
